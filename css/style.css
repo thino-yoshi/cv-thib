@@ -138,6 +138,8 @@ header h1 {
 @media (max-width: 480px) {
   header h1 {
     font-size: 3rem;
+    letter-spacing: 2rem;
+    margin: 1rem;
   }
 }
 header p {
@@ -280,6 +282,7 @@ footer {
   align-items: center;
   color: white;
   padding: 5rem;
+  width: 100vw;
   background: var(--text);
 }
 @media (max-width: 480px) {
