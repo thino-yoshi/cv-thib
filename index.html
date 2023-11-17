@@ -145,10 +145,12 @@
      </div>  
     <footer>
       <h2 class="title-small">pour vous contacter</h2>
-      <form action="#">
+      <form name="contact" method="POST" data-netlify="true">
         <i class="fa-regular fa-envelope prefix"></i>
-        <input type="text" placeholder="votre email">
-        <button><i class="fa-regular fa-paper-plane postfix"></i></button>
+        <input type="text" name="email" placeholder="votre email">
+        <button type="submit">
+          <i class="fa-regular fa-paper-plane postfix"></i>
+        </button>
       </form>
     </footer> 
   </body>
