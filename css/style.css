@@ -340,13 +340,13 @@ footer form button .postfix {
 
 .certificat {
   display: grid;
-  grid: "arrow . ." 1fr ". img ." auto ". . ." 1fr/1fr auto 1fr;
+  grid: "arrow lien lien" 1fr ". img ." auto ". . ." 1fr/1fr auto 1fr;
   min-height: 100vh;
   background: var(--primary);
 }
 @media (max-width: 480px) {
   .certificat {
-    grid: "arrow" auto "img" 500px/auto;
+    grid: "arrow" auto "lien" auto "img" 500px/auto;
   }
 }
 
@@ -360,7 +360,7 @@ footer form button .postfix {
   }
 }
 
-.certificat i {
+.certificat a .fleche {
   grid-area: arrow;
   margin: 2rem;
   margin-left: 10rem;
@@ -373,12 +373,19 @@ footer form button .postfix {
   transition: all 0.3s;
 }
 @media (max-width: 480px) {
-  .certificat i {
+  .certificat a .fleche {
     margin: 2rem;
   }
 }
-.certificat i:hover {
+.certificat a .fleche:hover {
   background: var(--hint);
+}
+
+.certificat .lien {
+  grid-area: lien;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
